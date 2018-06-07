@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">        
+        <title>Mini-Game</title>
+    </head>
+
+    <body>
+	
+	<!-- GAME -->
+	 
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Taškų suma</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Taškų suma</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>Pradėti iš naujo</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Ridenti kauliukus</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Užlaikyti</button>
+            
+			<input type="text" placeholder="Taškai" class="final-score">
+			
+            <img src="dice-5.png" alt="Dice" class="dice" id="dice-1">
+			<img src="dice-5.png" alt="Dice" class="dice" id="dice-2">
+			
+			<!-- <button class="btn-rules" id="rules-btn"><i class="ion-ios-loop"></i>Žaidimo taisyklės</button> -->
+        </div>
+        
+		<button class="btn-rules ion-ios-cloud" id="clickRules"><i></i>Žaidimo taisyklės</button>
+	
+		<!-- RULES MODAL -->
+	
+		<div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p><strong>Žaidimo taisyklės</strong>
+			<br>
+			<br>
+			<p style="text-align: left;">1. Žaidime dalyvauja du žaidėjai, kurie žaidžia paeiliui;</p>
+			<p style="text-align: left;">2. Kiekvieną raundą žaidėjas ridena kauliukus neribotą skaičių kartų ir kiekvienas taškas yra pridedamas prie bendro rezultato;</p>
+			<p style="text-align: left;">3. Jei žaidėjas išridena bent vieną 1, visi taškai yra anuliuojami ir pradedami rinkti nuo nulio;
+			<p style="text-align: left;">4. Žaidėjas gali pasirinkti „UŽLAIKYTI“, norėdamas nerizikuoti, surinkti išridentus taškus ir perleisti ėjimą kitam žaidėjui;</p>
+			<p style="text-align: left;">5. Laimi žaidėjas, kuris pirmas surinko nusistatytą taškų sumą laukelyje „TAŠKAI“ (pagal nutylėjimą, taškų suma yra 100).
+		  </div>
+
+		</div>
+		
+        <script src="app.js"></script>
+    </body>
+</html>
